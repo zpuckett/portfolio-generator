@@ -1,3 +1,4 @@
+
 const fs = require('fs');
 const inquirer = require('inquirer');
 const generatePage = require('./src/page-template');
@@ -247,18 +248,4 @@ promptUser()
     .then(answers => console.log(answers))
     .then(promptProject)
     .then(projectAnswers => console.log(projectAnswers));
-
-
-/*const fs = require('fs');
-const generatePage = require('./src/page-template.js');
-const pageHTML = generatePage(name, github);
-
-
-fs.writeFile('./index.html', generatePage(name, github), err => {
-    if (err) throw new Error(err);
-
-    console.log('Portfolio complete! Checkout index.html to see the output!');
-
-});*/
-
 
